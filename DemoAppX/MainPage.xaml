@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoAppX.MainPage">
+
+    <!--<StackLayout Background="Yellow" Padding="30, 30, 30, 30" Margin="20, 20, 20, 20" Spacing="10" Orientation="Horizontal">   
+        <Label Text="Profe, por fin logré hacer esto" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"
+        <Label BackgroundColor="Azure" TextColor="Black"  Text="StackLayout tiene su conjunto de propiedades Margen para controlar la posicion de representacion de StackLayout"/>
+        <Label BackgroundColor="Red" TextColor="Black" Text="La propiedad Padding se puede configurar para especificar la distancia entre StackLayout y sus elementos secundarios"/>
+        <Label BackgroundColor="Lime" TextColor="Black" Text="La propiedad Espaciado se puede configurar para especificar la distancia entre vistas en StackLayout"/>
+    </StackLayout>-->
+
+    <Grid Margin="20, 35, 20, 20" Padding="30, 30, 30, 30" BackgroundColor="Aquamarine"
+          RowSpacing="5" ColumnSpacing="5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label TextColor="Black" Grid.Row="0" Grid.Column="0" Text="Column 0, Row 0"/>
+        <Label TextColor="Black" Grid.Row="0" Grid.Column="1" Text="Column 1, Row 0"/>
+        <Label TextColor="Black" Grid.Row="1" Grid.Column="0" Text="Column 0, Row 1"/>
+        <Label TextColor="Black" Grid.Row="1" Grid.Column="1" Text="Column 1, Row 1"/>
+        <Label TextColor="Black" Grid.ColumnSpan="2" Grid.Row="2"  Text="Xamarin.Forms(C#) Suscribete es gratis :v ColumnSpan2."/>
+        <Label TextColor="Black" Grid.RowSpan="2" Grid.Row="3"  Text="Xamarin.Forms(C#) Suscribete es gratis :v RowSpan2."/>
+
+    </Grid>
+
+</ContentPage>
